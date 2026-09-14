@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 65.2.191.73
+  server: 65.2.178.161
   port: 443
   udp: true
   type: hysteria2
@@ -18,10 +18,10 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
+  sni: whatsapp.com
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 65.2.178.161
+  server: 65.2.191.73
   port: 443
   udp: true
   type: hysteria2
@@ -39,7 +39,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
