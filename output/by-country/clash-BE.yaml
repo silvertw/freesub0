@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 172.67.67.178
-  port: 443
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  server: 103.31.77.108
+  port: 2053
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /channels/act
     headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 rules:
 - MATCH,PROXIES
