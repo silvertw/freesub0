@@ -26,18 +26,16 @@ proxies:
   sni: iq5ny.pleiades.codes
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 62.238.103.54
-  port: 2083
+  server: 193.23.201.65
+  port: 5432
   udp: true
   type: vless
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 31.76.80.230
   port: 8443
