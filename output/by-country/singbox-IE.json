@@ -6,32 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "172.67.145.5",
-      "server_port": 443,
-      "uuid": "20836693-ea23-4f40-a1e7-48a6da897917",
-      "tls": {
-        "enabled": true,
-        "server_name": "netra-85a0ca.shoameni19.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui",
-        "headers": {
-          "Host": "netra-85a0ca.shoameni19.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -51,48 +25,18 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-      "server": "188.114.96.3",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
-      "tls": {
-        "enabled": true,
-        "server_name": "6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/N61UxT346epoPVmA9xFM6H00?ed=2560",
-        "headers": {
-          "Host": "6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
