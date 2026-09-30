@@ -5,19 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 188.114.97.6
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 172.64.229.170
-  port: 2082
+  server: 172.64.229.2
+  port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -26,8 +15,8 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 172.64.42.85
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 162.159.0.53
   port: 8080
   udp: true
   type: vless
@@ -37,56 +26,46 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 172.64.32.103
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 104.19.62.25
+  server: 172.67.133.170
   port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
   tls: true
-  servername: 77yku.ngw0.4j6.hh.vavava.kdns.fr
+  servername: peekconfigg.vipserver1-39d.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /sync
     headers:
-      Host: 77yku.ngw0.4j6.hh.vavava.kdns.fr
+      Host: peekconfigg.vipserver1-39d.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 162.159.0.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 172.64.53.55
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: china.letsconnectpoint.com
+  server: 139.28.168.201
   port: 443
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -94,7 +73,20 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: 91.240.86.70
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: ru.karzino-connected.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c47d9a64-5237-4386-bb5b-a5d0d312cab9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v78yAb9eo19LuR0e08mB_cnAS-QLlvqRkEZoKs7q2mU
+    short-id: 30e530274c0c72cc
+  servername: ru.karzino-connected.com
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -119,7 +111,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,6 +124,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 rules:
 - MATCH,PROXIES
