@@ -4,7 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  server: 44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: 44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -15,31 +23,29 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: x-tw01.xueshan168.cc
-  port: 16000
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+  sni: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
