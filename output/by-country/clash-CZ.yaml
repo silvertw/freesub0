@@ -5,50 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.21.69.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  tls: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/uWq9DFRgj8BwQiSXmZ46
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 172.67.133.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
-  tls: true
-  servername: 789156.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048fp=randomized
-    headers:
-      Host: 789156.xyz
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 66.81.247.155
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
-  tls: true
-  servername: testmikonim.hydrymhmdamyn7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /OAZko425kNFF0PpQ
-    headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: cz.h2.cleanersaz.help
   port: 443
   udp: true
@@ -62,17 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
