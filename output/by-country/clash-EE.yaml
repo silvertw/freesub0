@@ -5,26 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 93.123.39.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5298d5c5-0633-4989-95c8-68ee13cd507e
-  tls: true
-  servername: ee2x.global-cdn.org
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 109.206.241.10
   port: 449
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+  sni: 109.206.241.10
   skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 94.183.170.135
   port: 8443
@@ -49,18 +49,18 @@ proxies:
   servername: est.nztvpn.com
   client-fingerprint: random
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  server: 188.225.38.216
   port: 443
   udp: true
   type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  flow: xtls-rprx-vision
+  uuid: 30292475-4666-4c26-bcb2-338a0919958b
   tls: true
-  reality-opts:
-    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
-    short-id: d98e7afec9c0c359
-  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
+  servername: lalibobi.online
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: lalibobi.orbit.v3.Connect
 proxy-groups:
 - name: PROXIES
   type: select
