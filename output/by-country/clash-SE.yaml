@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: swe.wizard.select
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: qq
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 62.60.159.81
   port: 2053
@@ -39,22 +37,9 @@ proxies:
   type: hysteria2
   password: e625f8ef-f935-4c7d-a259-0f154b6842fd
   sni: hy-se.bypassme.online
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 87.239.111.174
-  port: 18563
-  udp: true
-  type: vless
-  uuid: 71c8d2c6-a7f1-4c74-b37d-d7f06fef9c04
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8
-    short-id: e9eb910e5af883e3
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: edge-lab-b.10media.top
+  server: 45.12.63.219
   port: 443
   udp: true
   type: vless
@@ -62,9 +47,37 @@ proxies:
   tls: true
   servername: edge-lab-b.10media.top
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: se1.h1cloud.net
+  port: 26128
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
+    short-id: 13ac4d3bdadf1ea1
+  servername: www.icloud.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: df50147201bf
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +88,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +99,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 rules:
 - MATCH,PROXIES
