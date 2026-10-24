@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: hw3.divarkhaghazi.com
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -31,16 +31,18 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 46.62.204.134
+  server: 185.119.81.7
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9BUlinkTIxNgD2Em4KShtEbXOjBKvz2mDwT1VqoeR1k
+    short-id: 80c4e0bda641d6c9
+  servername: ht689zw45oor.cloudydigital.net
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
