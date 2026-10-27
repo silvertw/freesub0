@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 13.143.239.69
-  port: 8443
+  server: 83.147.216.223
+  port: 4433
   udp: true
   type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
   tls: true
-  servername: ee4.pad-sservice.lat
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /EE4W
+    path: /@Marisa_kristi
     headers:
-      Host: ee4.pad-sservice.lat
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
