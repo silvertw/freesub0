@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.98.0
+  server: www.windowsmsidownloads.com
   port: 443
   udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  type: vmess
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: vpn.cintaku.qzz.io
+  servername: www.windowsmsidownloads.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /truth
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: www.windowsmsidownloads.com
 proxy-groups:
 - name: PROXIES
   type: select

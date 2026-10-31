@@ -4,21 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.98.0",
+      "server": "www.windowsmsidownloads.com",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
+        "server_name": "www.windowsmsidownloads.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
+        "path": "/truth",
         "headers": {
-          "Host": "vpn.cintaku.qzz.io"
+          "Host": "www.windowsmsidownloads.com"
         }
       }
     },
